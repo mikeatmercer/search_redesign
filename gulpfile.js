@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 var gulpif = require('gulp-if');
-var strip = require('gulp-strip-code');
+
 var sass = require('gulp-sass'),
     postcss = require('gulp-postcss'),
     autoprefixer = require('autoprefixer');
@@ -24,7 +24,7 @@ gulp.task('css', function(){
 		.pipe(sass())
 		.pipe(postcss([autoprefixer()]))
 		.pipe(gulp.dest('W:\\'));
-	
+
 });
 
 
