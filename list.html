@@ -1,16 +1,49 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>ML Search - List View</title>
-	<link rel="stylesheet/less" type="text/css" href="less/main.less" />
-	<script src="plugins/less.min.js" type="text/javascript"></script>
-  </head>
-  <body>
+@@include('./header.html', {"htmlclasses":"","mainclass": "list-view"})
 
-    <h1>Help</h1>
+<div class="ms-l-filters" style="display:none;">
+  <div class="ms-l-filters-filter">
+    <button class='ms-l-filters-filter-btn'>File Type</button>
+    <div class="ms-l-filters-filter-dropdown">
+    </div>
+  </div>
 
-  </body>
+</div>
+<div class="ms-result-meta ms-result-meta--list-view">1 &ndash; 25 of 25,123 results for &ldquo;Gail Evans&rdquo;</div>
+<main class="ms-main ms-main--list-view">
+<div class="ms-l-left-col">
 
-</html>
+  <div class="ms-active-filters ms-active-filters--list-view">
+    <span class="ms-active-filters-label">Filtering by: </span>
+    <ul class="ms-active-filters-ul">
+        <li class="ms-active-filters-ul-li"><button class="ms-active-filters-ul-li-btn gl-pill"> <span class="gl-pill-text">Internal Use Only</span> @@include('./svg_x.html') </button></li>
+        <li class="ms-active-filters-ul-li"><button class="ms-active-filters-ul-li-btn gl-pill"> <span class="gl-pill-text">United States</span> @@include('./svg_x.html') </button></li>
+        <li class="ms-active-filters-ul-li"><button class="ms-active-filters-ul-li-btn gl-pill"> <span class="gl-pill-text">Mercer Penion Risk Exchange</span> @@include('./svg_x.html') </button></li>
+
+    </ul>
+  </div>
+  <ul class="ms-sr">
+    <li class="ms-sr-li ms-sr-li--default">
+      <h2 class="ms-sr-li-h2 u-text-overflow"><a href="#">Gail Evans Offers a View of the Future at MIT Sloan CIO Symposium</a></h2>
+      <a class="ms-sr-li-url u-text-overflow a--no-u" href="#">http://news.mercer.com/Pages/MercerServices/Gail-Evans-Offers-a-View-of-the-Future-at-MIT-Sloan-CIO-Symposium.aspx</a>
+      <p class="sr-ul-li-desc"><strong>Gail Evans</strong> Blog... Experience Enabler Category - <strong>Gail Evans</strong> and Rick... MercerOS... Experience Enabler Category - <strong>Gail Evans</strong>... panjabi... Digital Product Development...</p>
+    </li>
+    <li class="ms-sr-li ms-sr-li--person">
+      <a href="#" data-initials="GE" class="ms-sr-li ms-sr-li-bubble g-profile-img" style="background-image: url(https://api.adorable.io/avatars/120/gail-evans)">
+        <img src="https://api.adorable.io/avatars/120/gail-evans" alt="Gail Evans" />
+      </a>
+      <div class="ms-sr-li-info--flex">
+        <h2 class="ms-sr-li-h2 u-text-overflow"><a href="#">Gail Evans</a></h2>
+        <div class="sr-ul-li-personmeta t-overflow">Global Chief Information Officer (CIO) - MS Technology - New York - 1166</div>
+        <p class="sr-ul-li-desc">Gail Evans is Mercer’s Global Chief Information Officer. Prior to joining Mercer, Gail was the Group Partner Program &hellip;</p>
+      </div>
+
+
+    </li>
+
+  </ul>
+
+</div>
+</main>
+
+
+@@include('./footer.html')

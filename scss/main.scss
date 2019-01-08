@@ -1,0 +1,32 @@
+@import 'normalize.scss';
+@import 'variables.scss';
+@import 'gl-btn.scss';
+body {
+	font-family: Arial, sans-serif;
+	background: white;
+	font-size: 16px;
+}
+
+svg , img{
+	display:block;
+	fill: currentColor;
+}
+
+a {
+	text-decoration: none;
+	color: $sapphire-medium;
+	&:hover {
+		text-decoration: underline;
+	}
+	&.a--no-u {
+		text-decoration: none !important;
+	}
+}
+
+
+
+@import 'sticky-wrap.scss';
+@import 'header.scss';
+@import 'feedback-callout.scss';
+@import 'main-scaffold.scss';
+@import 'result-meta.scss';

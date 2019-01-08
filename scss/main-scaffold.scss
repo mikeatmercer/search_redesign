@@ -1,0 +1,10 @@
+.ms-main {
+  &--list-view {
+    max-width:$content-max-width;
+    min-width: $content-min-width;
+    /*margin: 0 auto;*/
+    margin-right: 24px;
+    display:flex;
+    justify-content: space-between;
+  }
+}

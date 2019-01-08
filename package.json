@@ -1,0 +1,33 @@
+{
+  "name": "ml_search_redesign",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikeatmercer/search_redesign.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikeatmercer/search_redesign/issues"
+  },
+  "homepage": "https://github.com/mikeatmercer/search_redesign#readme",
+  "dependencies": {
+    "npm": "^6.5.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.4",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-strip-code": "^0.1.4",
+    "yargs": "^12.0.5"
+  }
+}

@@ -1,0 +1,15 @@
+#search-feedback-callout {
+  position:absolute;
+  right: 24px;
+  top: 16px;
+  color: $sapphire-medium;
+  font-size: 11px;
+  display:flex;
+  align-items: center;
+  width: calc(8px * 42px);
+  > svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+}

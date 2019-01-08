@@ -1,0 +1,9 @@
+.ms-result-meta {
+  font-size: small;
+  color: $onyx-60;
+  &--list-view {
+    max-width: $content-max-width;
+    margin-left: $list-left-gutter;
+    line-height: 43px;
+  }
+}
