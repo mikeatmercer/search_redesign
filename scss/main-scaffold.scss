@@ -7,4 +7,18 @@
     display:flex;
     justify-content: space-between;
   }
+  &-l {
+    $left-col-width: 648px;
+    &-left-col {
+      width: $left-col-width;
+      margin-left: $list-left-gutter;
+      padding-top: 0px;
+      margin-right: 72px;
+    }
+    &-right-col {
+      height: 400px;
+      background:red;
+      flex: 1;
+    }
+  }
 }

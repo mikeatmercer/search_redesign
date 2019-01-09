@@ -1,0 +1,82 @@
+.ms-sr {
+  line-height: 1.5;
+  &-ul-li {
+    display:flex;
+    align-items: flex-start;
+    min-width: 100%;
+    margin-bottom: 24px;
+    width: 100%;
+    min-width: 0;
+    &-info {
+      min-width: 0%;
+      max-width: 100%;
+
+    }
+    &-h2 {
+      color: #190fab;
+      font-size: 18px;
+      min-width: 0;
+      > a {
+        color: inherit;
+        display: block;
+        min-width: 0;
+      }
+      &-label {
+        font-size: 12px;
+        display:inline-block;
+        vertical-align: middle;
+        margin-right: 4px;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        line-height: 1;
+      }
+    }
+    &-url {
+      font-size: small;
+      color: $emerald-dark;
+    }
+    &-desc {
+      font-size: 14px;
+    }
+    &-thumb-con {
+      margin-right: 24px;
+      &--lg {
+        margin-right: 16px;
+      }
+    }
+    &-contact-options {
+      display:flex;
+      font-size: small;
+      margin-top: 8px;
+      &-li {
+        display:flex;
+        align-items: center;
+        min-width: 0;
+        flex-shrink: 0;
+        &:not(:first-child) {
+          margin-left: 12px;
+        }
+        &:last-child {
+          flex-shrink: 1;
+        }
+        &-icon  {
+          margin-right: 4px;
+          > svg {
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+    }
+    &-list-meta {
+      margin: 4px 0;
+    }
+    ///MODULE CONTAINER
+    &--mod-con {
+      width: 708px;
+      position: relative;
+      left: $left-module-negative-margin;
+
+    }
+  }
+}

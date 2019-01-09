@@ -17,7 +17,11 @@ gulp.task('html', function() {
     }))
     .pipe(gulp.dest('W:\\'));
 });
-
+gulp.task('js',function(){
+  return gulp.src('js/**/*.js')
+    .pipe(concat('main.js'))
+    .pipe(gulp.dest('W:\\'));
+});
 
 gulp.task('css', function(){
 	return gulp.src(['scss/main.scss'])
@@ -29,7 +33,7 @@ gulp.task('css', function(){
 
 
 gulp.task('watch', function() {
-
-    gulp.watch(['*.html'], gulp.series('html'));
+  gulp.watch(['js/**/*.js'], gulp.series('js'));
+  gulp.watch(['*.html'], gulp.series('html'));
 	gulp.watch(['scss/**/*.scss'], gulp.series('css'));
 });

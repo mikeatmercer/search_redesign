@@ -1,0 +1,48 @@
+.gl-avatar {
+
+  border-radius: 50%;
+  background-color: $onyx-6;
+  background-size: cover;
+  background-position:center center;
+  position: relative;;
+  display:block;
+  overflow: hidden;
+  &:after {
+    line-height: 1;
+  }
+  > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  &--xxlg {
+    width: 96px;
+    height: 96px;
+    &:after {
+      font-size: 30px;
+    }
+  }
+  &--lg {
+    width: 48px;
+    height: 48px;
+    &:after {
+      font-size: 16px;
+    }
+  }
+  &--noimage {
+    background: $sapphire-dark !important;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    &:after {
+      display:block;
+      content: attr(data-initials);
+      color: white;
+      font-weight:bold;
+      text-transform: uppercase;
+    }
+  }
+}

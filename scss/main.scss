@@ -1,6 +1,11 @@
 @import 'normalize.scss';
 @import 'variables.scss';
+@import 'utilities.scss';
 @import 'gl-btn.scss';
+@import 'gl-filter-dropdown.scss';
+@import 'gl-pill.scss';
+@import 'gl-avatar.scss';
+@import 'gl-card.scss';
 body {
 	font-family: Arial, sans-serif;
 	background: white;
@@ -30,3 +35,8 @@ a {
 @import 'feedback-callout.scss';
 @import 'main-scaffold.scss';
 @import 'result-meta.scss';
+@import 'filter-list.scss';
+@import 'ms-active-filters.scss';
+@import 'list-results.scss';
+@import 'info-bar.scss';
+@import 'modules.scss';

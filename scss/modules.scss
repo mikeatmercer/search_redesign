@@ -1,0 +1,43 @@
+.ms-mod {
+  width: 100%;
+  &-top-label {
+    padding-left: (-$left-module-negative-margin);
+    margin-bottom: 8px;
+  }
+  &-convos {
+    display:flex;
+    &-li {
+      color:inherit;
+      flex: 1;
+      &:not(:first-child) {
+        margin-left: 8px;
+      }
+      &-top {
+        display: flex;
+        padding: 0px 16px;
+        border-bottom: 1px solid $onyx-10;
+        align-items: center;
+        height: 74px;
+        &-meta {
+          padding-left: 16px;
+          flex: 1;
+          min-width: 0;
+          &-name {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.2;
+            margin: 0 0 4px 0;
+            max-height: 43.2px;
+            overflow: hidden;
+            color: $sapphire-medium;
+          }
+        }
+      }
+      &-text {
+        padding: 16px;
+        font-size:small;
+      }
+    }
+
+  }
+}

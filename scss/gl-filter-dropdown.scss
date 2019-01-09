@@ -1,0 +1,85 @@
+.gl-filter {
+  &-container {
+    position:relative;
+  }
+  &-button {
+    display:block;
+    color: #005C96;
+    font-size: 14px;
+    position:relative;
+    min-width: 0;
+    display:flex;
+    align-items: center;
+    &--active {
+      color: black;
+    }
+    &--disabled {
+      color: $disabled-text;
+      pointer-events: none;
+    }
+    &-title{
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+      margin-right: 6px;
+      line-height: 1.2;
+    }
+    &:after {
+      display:block;
+      content:'';
+      border: 1px solid currentColor;
+      border-width: 6px 5px 0 5px;
+      border-right-color: transparent;
+      border-left-color: transparent;
+    }
+  }
+  &-dropdown-list {
+    width: 256px;
+    position:absolute;
+    margin-top: 4px;
+    margin-left: -12px;
+    max-height: 270px;
+    overflow: auto;
+    background: white;
+    border-radius: 2px;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.02), 0 1px 4px 0 rgba(0,0,0,0.1), 0 0 6px 0 rgba(0,0,0,0.06);
+    display:none;
+    &--activated {
+      display:block;
+    }
+    &--right-side {
+      margin-left: 12px;
+      right: 0;
+    }
+    &-li {
+      display: flex;
+      position: relative;
+      align-items: flex-end;
+      justify-content: space-between;
+      width:100%;
+      padding: 16px 16px 16px 36px;
+      font-size: 14px;
+      line-height: (18 / 14);
+      cursor: pointer;
+      &:hover {
+        background: $flat-hover;
+      }
+
+      &--disabled {
+        color: $disabled-text;
+        pointer-events: none;
+      }
+      > svg {
+        position:absolute;
+        width: 18px;
+        height: 18px;
+        left: 10px;
+        top: calc(50% - 9px);
+      }
+      &-title {
+        line-height: 1.2;
+        padding-right: 12px;
+      }
+    }
+  }
+}

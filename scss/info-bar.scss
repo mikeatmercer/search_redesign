@@ -1,0 +1,26 @@
+.ms-sr-info-bar {
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  width: auto;
+  max-width: 100%;
+  > * {
+    white-space: nowrap;
+  }
+  > *:nth-child(2) {
+    margin-left: 8px;
+  }
+  &-shrink {
+    flex-shrink: 1;
+  }
+  &-grow {
+    flex-shrink: 0;
+  }
+  &-info-flag {
+    background: $info-color;
+    padding: 0 8px;
+    line-height: 16px;
+    border-radius: 20px;
+  }
+
+}

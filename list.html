@@ -1,19 +1,20 @@
 @@include('./header.html', {"htmlclasses":"","mainclass": "list-view"})
 
-<div class="ms-l-filters" style="display:none;">
-  <div class="ms-l-filters-filter">
-    <button class='ms-l-filters-filter-btn'>File Type</button>
-    <div class="ms-l-filters-filter-dropdown">
-    </div>
-  </div>
-
+<div class="ms-l-filters" >
+  @@include('./filter-dropdown.html',{"filtername": "File Type", "active": ""})
+  @@include('./filter-dropdown.html',{"filtername": "Date", "active": ""})
+  @@include('./filter-dropdown.html',{"filtername": "LOB/Function", "active": "--active"})
+  @@include('./filter-dropdown.html',{"filtername": "Geography", "active": ""})
+  @@include('./filter-dropdown.html',{"filtername": "Sites", "active": ""})
+  @@include('./filter-dropdown.html',{"filtername": "Author", "active": ""})
+  @@include('./filter-dropdown.html',{"filtername": "Asset Type", "active": "--disabled"})
 </div>
-<div class="ms-result-meta ms-result-meta--list-view">1 &ndash; 25 of 25,123 results for &ldquo;Gail Evans&rdquo;</div>
+<div class="ms-result-meta ms-result-meta--list-view u-sm-label">1 &ndash; 25 of 25,123 results for &ldquo;Gail Evans&rdquo;</div>
 <main class="ms-main ms-main--list-view">
-<div class="ms-l-left-col">
+<div class="ms-main-l-left-col">
 
-  <div class="ms-active-filters ms-active-filters--list-view">
-    <span class="ms-active-filters-label">Filtering by: </span>
+  <div class="ms-active-filters ms-active-filters--list-view" style="display:none;">
+    <span class="ms-active-filters-label u-sm-label">Filtering by: </span>
     <ul class="ms-active-filters-ul">
         <li class="ms-active-filters-ul-li"><button class="ms-active-filters-ul-li-btn gl-pill"> <span class="gl-pill-text">Internal Use Only</span> @@include('./svg_x.html') </button></li>
         <li class="ms-active-filters-ul-li"><button class="ms-active-filters-ul-li-btn gl-pill"> <span class="gl-pill-text">United States</span> @@include('./svg_x.html') </button></li>
@@ -22,25 +23,87 @@
     </ul>
   </div>
   <ul class="ms-sr">
-    <li class="ms-sr-li ms-sr-li--default">
-      <h2 class="ms-sr-li-h2 u-text-overflow"><a href="#">Gail Evans Offers a View of the Future at MIT Sloan CIO Symposium</a></h2>
-      <a class="ms-sr-li-url u-text-overflow a--no-u" href="#">http://news.mercer.com/Pages/MercerServices/Gail-Evans-Offers-a-View-of-the-Future-at-MIT-Sloan-CIO-Symposium.aspx</a>
-      <p class="sr-ul-li-desc"><strong>Gail Evans</strong> Blog... Experience Enabler Category - <strong>Gail Evans</strong> and Rick... MercerOS... Experience Enabler Category - <strong>Gail Evans</strong>... panjabi... Digital Product Development...</p>
-    </li>
-    <li class="ms-sr-li ms-sr-li--person">
-      <a href="#" data-initials="GE" class="ms-sr-li ms-sr-li-bubble g-profile-img" style="background-image: url(https://api.adorable.io/avatars/120/gail-evans)">
-        <img src="https://api.adorable.io/avatars/120/gail-evans" alt="Gail Evans" />
-      </a>
-      <div class="ms-sr-li-info--flex">
-        <h2 class="ms-sr-li-h2 u-text-overflow"><a href="#">Gail Evans</a></h2>
-        <div class="sr-ul-li-personmeta t-overflow">Global Chief Information Officer (CIO) - MS Technology - New York - 1166</div>
-        <p class="sr-ul-li-desc">Gail Evans is Mercer’s Global Chief Information Officer. Prior to joining Mercer, Gail was the Group Partner Program &hellip;</p>
+    <li class="ms-sr-ul-li ms-sr-li--default">
+      <div class="ms-sr-ul-li-info">
+        <h2 class="ms-sr-ul-li-h2 u-tu-ellipsis"><a href="#">Gail Evans Offers a View of the Future at MIT Sloan CIO Symposium</a></h2>
+        <a class="ms-sr-ul-li-url u-tu-ellipsis a--no-u" href="#">http://news.mercer.com/Pages/MercerServices/Gail-Evans-Offers-a-View-of-the-Future-at-MIT-Sloan-CIO-Symposium.aspx</a>
+        <div class="ms-sr-ul-li-desc"><strong>Gail Evans</strong> Blog... Experience Enabler Category - <strong>Gail Evans</strong> and Rick... MercerOS... Experience Enabler Category - <strong>Gail Evans</strong>... panjabi... Digital Product Development...</div>
       </div>
+    </li>
+    <li class="ms-sr-ul-li ms-sr-ul-li--person">
+      <div class="ms-sr-ul-li-thumb-con">
+        <a href="#" data-initials="GE" class="ms-sr-li ms-sr-li-thumb gl-avatar gl-avatar--xxlg " style="background-image: url(https://api.adorable.io/avatars/120/gail-evans)">
+          <img src="https://api.adorable.io/avatars/120/gail-evans" alt="Gail Evans" />
+        </a>
+      </div>
+
+      <div class="ms-sr-ul-li-info">
+        <h2 class="ms-sr-ul-li-h2 u-tu-ellipsis"><a href="#">Gail Evans</a></h2>
+
+        <div class="ms-sr-ul-li-desc">
+          <div class="sr-ul-li-personmeta u-tu-ellipsis"><strong>Global Chief Information Officer (CIO) &ndash; MS Technology &ndash; New York &ndash; 1166</strong></div>
+          Gail Evans is Mercer’s Global Chief Information Officer. Prior to joining Mercer, Gail was the Group Partner Program &hellip;
+        </div>
+        <div class="ms-sr-ul-li-contact-options">
+          <div class="ms-sr-ul-li-contact-options-li">
+          <span class="ms-sr-ul-li-contact-options-li-icon">  @@include('./svg_phone.html') </span>
+            <span class="ms-sr-ul-li-contact-options-li-text u-tu-ellipsis">+1 212 345 1857</span>
+          </div>
+          <div class="ms-sr-ul-li-contact-options-li">
+          <span class="ms-sr-ul-li-contact-options-li-icon">  @@include("./svg_mobile.html")</span>
+          <span class="ms-sr-ul-li-contact-options-li-text u-tu-ellipsis">  +1 212 345 1857 </span>
+          </div>
+          <a href="#" class="ms-sr-ul-li-contact-options-li">
+            <span class="ms-sr-ul-li-contact-options-li-icon">@@include('./svg_mail.html') </span>
+            <span  class="ms-sr-ul-li-contact-options-li-text u-tu-ellipsis">gail.evans@mercer.com</span>
+          </a>
+        </div>
+      </div>
+    </li>
+    <li class="ms-sr-ul-li ms-sr-ul-li--mod-con" id="conversationsModule" style="display:none;">
+      @@include('./module_conversations.html')
+
+    </li>
+    <li class="ms-sr-ul-li ms-sr-ul-li--conversation">
+      <div class="ms-sr-ul-li-thumb-con ms-sr-ul-li-thumb-con--lg">
+        <a href="#" data-initials="PD" class="ms-sr-li ms-sr-li-thumb gl-avatar gl-avatar--lg" style="background-image: url(https://api.adorable.io/avatars/48/paula-donovan)">
+          <img src="https://api.adorable.io/avatars/120/paula-donovan"  />
+        </a>
+      </div>
+      <div class="ms-sr-ul-li-info">
+        <h2 class="ms-sr-ul-li-h2 u-tu-ellipsis"><a href="#"><span class="ms-sr-ul-li-h2-label">[ Conversation ]</span> Paula Donovan</a></h2>
+        <div class="ms-sr-ul-li-list-meta ms-sr-info-bar">
+          <span class="u-tiny-label">12 September 2018</span>
+        </div>
+        <div class="ms-sr-ul-li-desc">
+          O'Higgins, Bryan: @[<a href="#">Mercer Pension Risk Exchange</a>]: Expectations for 2018 still suggest it will be the busiest year ever for pension risk transfer, and Mercer Pension Risk Exchange continues to &hellip;
+        </div>
+
+
+    </li>
+    <li class="ms-sr-ul-li ms-sr-ul-li--document">
+      <div class="ms-sr-ul-li-thumb-con ms-sr-ul-li-thumb-con--lg">
+        <a href="#" data-initials="PD" class="ms-sr-li ms-sr-li-thumb gl-avatar gl-avatar--lg" style="background-image: url(https://api.adorable.io/avatars/48/paula-donovan)">
+          <img src="https://api.adorable.io/avatars/120/paula-donovan"  />
+        </a>
+      </div>
+      <div class="ms-sr-ul-li-info">
+        <h2 class="ms-sr-ul-li-h2 u-tu-ellipsis"><a class=" u-tu-ellipsis" href="#">V8 Draft - Mercer Pension Risk Exchange - Marketing  Launch-DC1.pptx</a></h2>
+        <div class="ms-sr-ul-li-list-meta ms-sr-info-bar u-tiny-label">
+          <span class="ms-sr-info-bar-info-flag ms-sr-info-bar-shrink u-tiny-label u-tu-ellipsis">Copyrighted Content – Permission to use internally</span>
+          <span class=" ms-sr-info-bar-grow u-tiny-label u-tu-ellipsis">Training Presentation – <a href="#">Evans, Gail</a> – 12 Feb 2017  </span>
+        </div>
+        <div class="ms-sr-ul-li-desc">
+          Message from Gail Evans Important changes to how ... disabled in late July... Message from Gail Evans... 6/16/2017 8:45:09 AM UK …
+        </div>
 
 
     </li>
 
   </ul>
+
+</div>
+<div class="ms-main-l-right-col">
 
 </div>
 </main>

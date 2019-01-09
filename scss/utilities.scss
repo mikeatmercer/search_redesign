@@ -1,0 +1,21 @@
+.u {
+  &-tu-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
+    display: block;
+  }
+  &-sm-label {
+    font-size: small;
+    color: $onyx-60;
+    font-weight: normal;
+  }
+  &-tiny-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+    line-height: 1;
+  }
+}

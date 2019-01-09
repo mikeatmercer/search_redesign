@@ -1,0 +1,18 @@
+.ms-active-filters {
+  display: flex;
+  margin-bottom: 8px;
+  &-label {
+    font-size: small;
+    color: $onyx-60;
+    padding-top: 4px;
+  }
+  &-ul {
+    flex: 1;
+    margin-left: 8px;
+    display:flex;
+    flex-wrap: wrap;
+    &-li {
+      margin: 0 8px 8px 0;
+    }
+  }
+}

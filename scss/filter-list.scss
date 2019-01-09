@@ -1,0 +1,14 @@
+.ms-l-filters {
+  background: $onyx-6;
+  padding: 0 24px;
+  line-height: 1;
+  display: none;
+  &--open {
+    display:block;
+  }
+  &-filter {
+    display:inline-block;
+    margin-right: 32px;
+    padding: 8px 0;
+  }
+}

@@ -1,13 +1,23 @@
 $content-max-width: 1280px;
 $content-min-width: 1120px;
 
-$list-left-gutter:  84px;
+$list-left-gutter: 120px;
+$left-module-negative-margin: -32px;
 
 $onyx-6: #f0f0f0;
+$onyx-10: #e6e6e6;
 $onyx-60: #666;
 
 $flat-hover: rgba(0,168,200,0.1);
 
+$disabled-text: rgba(0,0,0,.3);
+
+$info-color: #A6E2EF;
+
 $sapphire-light: #a5e1ef;
-$sapphire-medium: #006D9E;
+$sapphire-medium: #005C96;
 $sapphire-bright: #00A8C8;
+$sapphire-dark: #002C77;
+
+$emerald-medium: #128C3F;
+$emerald-dark: #00582D;
