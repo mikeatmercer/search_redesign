@@ -8,7 +8,7 @@
   &--raised {
     color: white;
     background: $sapphire-medium;
-    &:hover, &:active, &--toggled-on {
+    &:hover, &:active, &__toggled-on {
       &:after {
         display:block;
         content:'';
@@ -20,7 +20,7 @@
         background: rgba(white,.2);
       }
     }
-    &:active, &--toggled-on{
+    &:active, &__toggled-on{
       	box-shadow: 0 -1px 6px 0 rgba(0,0,0,0.02), 0 1px 12px 0 rgba(0,0,0,0.1), 0 4px 5px 0 rgba(0,0,0,0.12);
     }
   }

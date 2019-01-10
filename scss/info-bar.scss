@@ -1,9 +1,11 @@
 .ms-sr-info-bar {
-  line-height: 1;
+  line-height: 1.2;
   display: flex;
   align-items: center;
   width: auto;
   max-width: 100%;
+  overflow: hidden;
+  font-size: small;
   > * {
     white-space: nowrap;
   }
@@ -21,6 +23,9 @@
     padding: 0 8px;
     line-height: 16px;
     border-radius: 20px;
+  }
+  &-news {
+    color: $emerald-dark;
   }
 
 }

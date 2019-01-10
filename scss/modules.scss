@@ -4,6 +4,10 @@
     padding-left: (-$left-module-negative-margin);
     margin-bottom: 8px;
   }
+  &-header {
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
   &-convos {
     display:flex;
     &-li {
@@ -39,5 +43,32 @@
       }
     }
 
+  }
+  &--news {
+    color: $onyx-medium;
+  }
+  &-news {
+    &-con {
+      padding:20px;
+    }
+    &-item {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+    &-title {
+      line-height: 1.2;
+    }
+    &-info {
+      font-size:14px;
+    }
+  }
+  &-news-items {
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    &-col {
+      width: calc(50% - 24px);
+    }
   }
 }

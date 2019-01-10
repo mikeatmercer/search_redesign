@@ -28,6 +28,15 @@ a {
 	}
 }
 
+footer {
+	background: $onyx-6;
+	border-top: 1px solid rgba(black,.2);
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+	margin-top: 48px;
+}
 
 
 @import 'sticky-wrap.scss';
@@ -39,4 +48,5 @@ a {
 @import 'ms-active-filters.scss';
 @import 'list-results.scss';
 @import 'info-bar.scss';
+@import 'ms-doc-icon.scss';
 @import 'modules.scss';

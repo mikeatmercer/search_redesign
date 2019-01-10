@@ -1,0 +1,18 @@
+.ms-doc-icon {
+  background: $onyx-60;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    fill:white;
+  }
+  &.gl-avatar--lg {
+    svg, img {
+      width: 28px;
+      height: 28px;
+    }
+  }
+  &--excel {
+    background: #207245;
+  }
+}

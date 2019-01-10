@@ -5,7 +5,7 @@ function glFilterDropdowns() {
   function filterSetup(e) {
     var btn = $(e).find('.gl-filter-button'),
         list = $(e).find('.gl-filter-dropdown-list');
-    var activeClass = 'gl-filter-dropdown-list--activated',
+    var activeClass = 'gl-filter-dropdown-list__activated',
         rightClass = 'gl-filter-dropdown-list--right-side';
     $(btn).on('click',function(e){
       e.preventDefault();
