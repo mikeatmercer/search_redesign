@@ -91,7 +91,7 @@
       &-tabs {
         display:flex;
         border: 1px solid $onyx-10;
-        border: 1px 0;
+        border-width: 1px 0;
         &-tab {
           flex: 1;
           position:relative;
