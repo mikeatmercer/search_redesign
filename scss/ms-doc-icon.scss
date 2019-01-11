@@ -12,7 +12,16 @@
       height: 28px;
     }
   }
+  &.gl-avatar--xlg {
+    svg, img {
+      width: 40px;
+      height:40px;
+    }
+  }
   &--excel {
     background: #207245;
+  }
+  &--sp {
+    background: $garnet-medium;
   }
 }

@@ -25,6 +25,13 @@
       font-size: 30px;
     }
   }
+  &--xlg {
+    width: 64px;
+    height: 64px;
+    &:after {
+      font-size: 18px;
+    }
+  }
   &--lg {
     width: 48px;
     height: 48px;

@@ -28,6 +28,12 @@ a {
 	}
 }
 
+h1,h2,h3,h4,h5,h6 {
+	> a {
+		color:inherit;
+	}
+}
+
 footer {
 	background: $onyx-6;
 	border-top: 1px solid rgba(black,.2);

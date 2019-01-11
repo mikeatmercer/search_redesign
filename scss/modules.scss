@@ -1,5 +1,8 @@
 .ms-mod {
   width: 100%;
+  &--right-col {
+    margin-bottom: 24px;
+  }
   &-top-label {
     padding-left: (-$left-module-negative-margin);
     margin-bottom: 8px;
@@ -7,6 +10,9 @@
   &-header {
     margin-bottom: 12px;
     font-size: 18px;
+    &--nomargin {
+      margin-bottom: 0;
+    }
   }
   &-convos {
     display:flex;
@@ -58,6 +64,7 @@
     }
     &-title {
       line-height: 1.2;
+      color: $sapphire-medium;
     }
     &-info {
       font-size:14px;
@@ -69,6 +76,73 @@
     justify-content: space-between;
     &-col {
       width: calc(50% - 24px);
+    }
+  }
+  &-right-col {
+    &-header {
+      padding: 24px;
+    }
+    &-desc {
+      font-size: 14px;
+      padding: 0 24px 24px 24px;
+      line-height: 1.5;
+    }
+    &-sp-card {
+      &-tabs {
+        display:flex;
+        border: 1px solid $onyx-10;
+        border: 1px 0;
+        &-tab {
+          flex: 1;
+          position:relative;
+          &-button {
+            padding: 12px;
+            width: 100%;
+            font-size: 16px;
+            color: $sapphire-medium;
+            text-align:center;
+            position:relative;
+            &:hover {
+              background: $flat-hover;
+            }
+            &--selected {
+              &:after {
+                display:block;
+                content:'';
+                position:absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 2px;
+                background:$sapphire-bright;
+              }
+            }
+          }
+        }
+      }
+      &-doc-list {
+        display:flex;
+        width: 100%;
+        &-ul {
+          &:first-child {
+            margin-right: 48px;
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+          &-li {
+            margin-bottom: 12px;
+          }
+        }
+      }
+      &-tab-content {
+        padding: 24px 24px 36px 24px;
+        &-contacts {
+          &-li {
+            margin-bottom: 12px;
+          }
+        }
+      }
     }
   }
 }

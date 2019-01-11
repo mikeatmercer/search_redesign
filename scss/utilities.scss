@@ -18,4 +18,26 @@
     font-weight: 600;
     line-height: 1;
   }
+  &-subtitle {
+    color: $onyx-60;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size:12px ;
+    letter-spacing:(2em / 14) ;
+  }
+  &-wthumb {
+    display:flex;
+    width: 100%;
+    &--center {
+      align-items: center;
+    }
+    &-thumb-con {
+      &--lg {
+        margin-right: 16px;
+      }
+    }
+    &-content {
+      flex: 1;
+    }
+  }
 }
