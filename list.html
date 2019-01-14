@@ -13,7 +13,7 @@
 <main class="ms-main ms-main--list-view">
 <div class="ms-main-l-left-col">
 
-  <div class="ms-active-filters ms-active-filters--list-view" style="display:none;">
+  <div class="ms-active-filters ms-active-filters--list-view" id="activeFilterList" style="display:none;">
     <span class="ms-active-filters-label u-sm-label">Filtering by: </span>
     <ul class="ms-active-filters-ul">
         <li class="ms-active-filters-ul-li"><button class="ms-active-filters-ul-li-btn gl-pill"> <span class="gl-pill-text">Internal Use Only</span> @@include('./svg_x.html') </button></li>
@@ -64,7 +64,7 @@
       @@include('./module_conversations.html')
 
     </li>
-    <li class="ms-sr-ul-li ms-sr-ul-li--mod-con" id="newsModule" style="">
+    <li class="ms-sr-ul-li ms-sr-ul-li--mod-con" id="newsModule" style="display:none;">
       @@include('./module_news.html')
 
     </li>
@@ -150,9 +150,40 @@
 
 </div>
 <div class="ms-main-l-right-col">
+  <div id="moduleSolutions">
   @@include('module_solution.html')
+  </div>
+  <div  id="moduleTeamSites" style="display:none;">
+    @@include('./module_teamsites.html')
+  </div>
+  <div  id="moduleColleagues" style="display:none;">
+    @@include('./module_colleagues.html')
+  </div>
 </div>
 </main>
 
 
 @@include('./footer.html')
+
+
+<div id="UIToggler">
+  <div class="section">
+    <h2>Active Filters</h2>
+    <button data-type="visToggle" data-attr-state="Show" data-el="activeFilterList">Show</button>
+
+  </div>
+  <div class="section">
+    <h2>Left Col Mods</h2>
+    <button  data-block="leftCol" data-el="conversationsModule">Convos</button>
+    <button  data-block="leftCol" data-el="newsModule" >News</button>
+    <button  data-block="leftCol" data-el="blank" class="selected">Off</button>
+  </div>
+  <div class="section">
+    <h2>Right Col Mods</h2>
+    <button  data-block="rightCol" class="selected" data-el="moduleSolutions">Solutions</button>
+    <button  data-block="rightCol" data-el="moduleTeamSites" >Team Sites</button>
+    <button  data-block="rightCol" data-el="moduleColleagues" >Colleagues</button>
+    <button  data-block="rightCol" data-el="blank" class="">Off</button>
+  </div>
+
+</div>

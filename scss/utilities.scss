@@ -6,6 +6,9 @@
     min-width: 0;
     display: block;
   }
+  &-smaller {
+    font-size: small;
+  }
   &-sm-label {
     font-size: small;
     color: $onyx-60;
@@ -39,5 +42,8 @@
     &-content {
       flex: 1;
     }
+  }
+  &-no-top-padding {
+    padding-top: 0;
   }
 }

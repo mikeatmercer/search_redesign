@@ -1,0 +1,41 @@
+#UIToggler {
+  display:flex;
+  background: #595998;
+  border-top: 2px solid rgba(white,.2);
+  color: white;
+  font-size: 11px;
+  padding: 8px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 9999;
+  > .section {
+    display:flex;
+    align-items: center;
+    &:not(:first-child) {
+      margin-left: 16px;
+
+    }
+    > * {
+      margin-right: 4px;
+    }
+  }
+  h2 {
+    margin-bottom: 4px;
+  }
+  button {
+    background: #0FB694;
+    font-size: 10px;
+    text-transform: uppercase;
+    color:white;
+    padding: 4px;
+    border-top: 1px solid rgba(white, .2);
+    &.selected {
+      pointer-events: none;
+      background: #004C50;
+       border: 0;
+       border-bottom: 1px solid rgba(white, .2);
+    }
+  }
+}

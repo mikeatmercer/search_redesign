@@ -87,6 +87,12 @@
       padding: 0 24px 24px 24px;
       line-height: 1.5;
     }
+    &-list {
+      padding: 0 24px 24px 24px;
+      &-li {
+        margin-bottom: 16px;
+      }
+    }
     &-sp-card {
       &-tabs {
         display:flex;
@@ -137,6 +143,9 @@
       }
       &-tab-content {
         padding: 24px 24px 36px 24px;
+        &--no-top-padding {
+          padding-top: 0;
+        }
         &-contacts {
           &-li {
             margin-bottom: 12px;
