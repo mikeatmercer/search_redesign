@@ -1,6 +1,7 @@
 .gl-filter {
   &-container {
     position:relative;
+    z-index: 998;
   }
   &-button {
     display:block;
