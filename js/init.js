@@ -24,6 +24,15 @@ function init() {
   $("#UIToggler button").on('click',function(e){
     e.preventDefault();
     var el = "#"+$(this).attr('data-el');
+    if($(this).attr('data-type') === "loading") {
+      $('html').removeClass('html__loading');
+      $('#UIToggler button[data-type=loading]').removeClass('selected');
+      if($(this).attr('data-state') === "on") {
+        $('html').addClass('html__loading');
+      }
+      $(this).addClass('selected');
+      return;
+    }
     if($(this).attr('data-type') === "visToggle") {
       if($(this).attr('data-attr-state') === "Show") {
         $(el).show();
