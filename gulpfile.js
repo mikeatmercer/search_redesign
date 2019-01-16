@@ -30,7 +30,7 @@ gulp.task('css', function(){
 		.pipe(gulp.dest('W:\\'));
 
 });
-
+gulp.task('build', gulp.series('js','css','html'));
 
 gulp.task('watch', function() {
   gulp.watch(['js/**/*.js'], gulp.series('js'));
