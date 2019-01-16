@@ -47,9 +47,13 @@
     display:flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 96px;
     &-controls {
       display:flex;
       align-items: center;
+      .gl-btn {
+        font-size: 12px;
+      }
       > * {
         &:not(:first-child) {
           margin-left: 12px;
