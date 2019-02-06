@@ -1,5 +1,6 @@
 .ms-sr {
   line-height: 1.5;
+
   &-ul-li {
     display:flex;
     align-items: flex-start;
@@ -7,10 +8,21 @@
     margin-bottom: 32px;
     width: 100%;
     min-width: 0;
+    &--w-thumb {
+      display:block;
+    }
     &-info {
       min-width: 0%;
       max-width: 100%;
       flex: 1;
+      &--w-thumb {
+        display:flex;
+        margin-top: 8px;
+      }
+      &-text-container {
+        flex: 1;
+        min-width: 0;
+      }
     }
     &-h2 {
       color: #190fab;
