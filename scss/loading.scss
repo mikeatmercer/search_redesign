@@ -2,7 +2,7 @@
   $ghost-color: #e5e5e5;
   overflow:hidden;
   .ms-h-nav {
-    visibility: hidden;
+    pointer-events: none;
   }
   body {
     overflow-y: scroll;
@@ -15,7 +15,7 @@
     display:none;
   }
   .ms-h-nav, .ms-l-filters *, {
-    visibility: hidden;
+    pointer-events: none;
   }
   .ms-main {
     height: 100vh;

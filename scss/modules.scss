@@ -10,6 +10,7 @@
   &-header {
     margin-bottom: 12px;
     font-size: 18px;
+    font-weight: normal;
     &--nomargin {
       margin-bottom: 0;
     }
@@ -34,7 +35,7 @@
           min-width: 0;
           &-name {
             font-size: 16px;
-            font-weight: bold;
+            //font-weight: bold;
             line-height: 1.2;
             margin: 0 0 4px 0;
             max-height: 43.2px;
@@ -64,6 +65,7 @@
     }
     &-title {
       line-height: 1.2;
+      
       color: $sapphire-medium;
     }
     &-info {

@@ -23,6 +23,11 @@ gulp.task('js',function(){
     .pipe(gulp.dest('W:\\'));
 });
 
+gulp.task('assets',function(){
+  return gulp.src('assets/**/*')
+    .pipe(gulp.dest('W:\\assets\\'));
+});
+
 gulp.task('css', function(){
 	return gulp.src(['scss/main.scss'])
 		.pipe(sass())
@@ -30,10 +35,11 @@ gulp.task('css', function(){
 		.pipe(gulp.dest('W:\\'));
 
 });
-gulp.task('build', gulp.series('js','css','html'));
+gulp.task('build', gulp.series('js','css','html','assets'));
 
 gulp.task('watch', function() {
   gulp.watch(['js/**/*.js'], gulp.series('js'));
   gulp.watch(['*.html'], gulp.series('html'));
 	gulp.watch(['scss/**/*.scss'], gulp.series('css'));
+  gulp.watch(['assets/**/*'], gulp.series('assets'));
 });

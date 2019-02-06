@@ -65,15 +65,17 @@
       &-tab {
         position: relative;
         padding: 0 16px;
-        color: $sapphire-medium;
+        color: $onyx-60;
         //font-weight: bold;
         //letter-spacing: .025em;
         line-height: 48px;
         text-decoration: none !important;
         &:hover {
+          color:  $sapphire-medium;
           background-color: $flat-hover;
         }
         &--active {
+          color:  $sapphire-medium;
           &:after {
             display:block;
             content:'';

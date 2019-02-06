@@ -4,7 +4,7 @@
     display:flex;
     align-items: flex-start;
     min-width: 100%;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
     width: 100%;
     min-width: 0;
     &-info {
@@ -16,12 +16,15 @@
       color: #190fab;
       font-size: 18px;
       min-width: 0;
+      font-weight: normal;
+      line-height: 1.25;
       > a {
         color: inherit;
         display: block;
         min-width: 0;
       }
       &-label {
+        /*
         font-size: 12px;
         display:inline-block;
         vertical-align: middle;
@@ -29,6 +32,8 @@
         text-transform: uppercase;
         letter-spacing: .1em;
         line-height: 1;
+        */
+        font-weight: normal;
       }
     }
     &-url {
