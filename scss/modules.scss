@@ -6,6 +6,10 @@
   &-top-label {
     padding-left: (-$left-module-negative-margin);
     margin-bottom: 8px;
+    > * {
+      display:inline-block;
+      font-size: small;
+    }
   }
   &-header {
     margin-bottom: 12px;
@@ -65,7 +69,7 @@
     }
     &-title {
       line-height: 1.2;
-      
+
       color: $sapphire-medium;
     }
     &-info {
