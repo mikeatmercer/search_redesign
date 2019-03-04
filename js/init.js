@@ -13,7 +13,7 @@ function init() {
     } else {
       $(filters).addClass(openClass);
       $(this).addClass('gl-btn--raised__toggled-on');
-      $(this).text('Hide Search Controls')
+      $(this).text('Hide Search Filters')
     }
 
   });
