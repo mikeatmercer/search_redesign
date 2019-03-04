@@ -1,0 +1,10 @@
+.dym {
+  &-container {
+    margin-bottom: 1em;
+  }
+  &-suggestion {
+    font-weight: bold;
+    font-style: italic;
+    color: $result-link-color;
+  }
+}
