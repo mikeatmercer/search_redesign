@@ -6,6 +6,7 @@
 @import 'gl-pill.scss';
 @import 'gl-avatar.scss';
 @import 'gl-card.scss';
+@import 'hr_callout.scss';
 body {
 	font-family: Arial, sans-serif;
 	background: white;
@@ -16,7 +17,9 @@ svg , img{
 	display:block;
 	fill: currentColor;
 }
-
+strong {
+	font-weight: bold;
+}
 a {
 	text-decoration: none;
 	color: $sapphire-medium;

@@ -1,0 +1,50 @@
+.hr_callout {
+    text-decoration: none !important;
+    border: 1px solid #e6e6e6;
+    border-radius: 16px;
+    display:block;
+    padding: 20px;
+    color: #404040;
+    &_content {
+        width: 100%;
+        display:flex;
+        align-items: flex-start;
+    }
+    &_svg_container {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: white; 
+        position:relative; 
+        margin-right: 16px;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.02), 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 0 6px 0 rgba(0, 0, 0, 0.06);
+        &:hover {
+            background: $flat-hover;
+        }
+        > svg {
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            left: calc(50% - 12px);
+            top: calc(50% - 12px);
+            fill: $sapphire-medium;
+        }
+    }
+    &_text {
+        flex: 1;
+    }
+    &_link {
+        color: $sapphire-medium;
+        font-size: 16px;
+        line-height: (18 /16);
+        display:block;
+        margin-bottom: 4px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &_desc {
+        font-size: 14px;
+        line-height: (21 / 14);
+    }
+}
