@@ -1,4 +1,5 @@
 .hr_callout {
+    $callout: &; 
     text-decoration: none !important;
     border: 1px solid #e6e6e6;
     border-radius: 16px;
@@ -18,9 +19,7 @@
         position:relative; 
         margin-right: 16px;
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.02), 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 0 6px 0 rgba(0, 0, 0, 0.06);
-        &:hover {
-            background: $flat-hover;
-        }
+
         > svg {
             width: 24px;
             height: 24px;
@@ -28,6 +27,9 @@
             left: calc(50% - 12px);
             top: calc(50% - 12px);
             fill: $sapphire-medium;
+        }
+        #{$callout}:hover & {
+            background: $flat-hover;
         }
     }
     &_text {
