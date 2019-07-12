@@ -18,7 +18,10 @@
   "homepage": "https://github.com/mikeatmercer/search_redesign#readme",
   "dependencies": {
     "npm": "^6.9.0",
-    "tar": ">=2.2.2"
+    "tar": ">=2.2.2",
+    "lodash": ">=4.17.13",
+    "lodash.mergewith": ">=4.6.2"
+
   },
   "devDependencies": {
     "autoprefixer": "^9.4.4",
