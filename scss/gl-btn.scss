@@ -7,7 +7,7 @@
   text-decoration: none !important;
   &--raised {
     color: white;
-    background: $sapphire-medium;
+    background: $btn-blue;
     &:hover, &:active, &__toggled-on {
       &:after {
         display:block;
@@ -25,7 +25,7 @@
     }
   }
   &--flat {
-    color: $sapphire-medium;
+    color: $btn-blue;
     background: none;
     &:hover, &:active {
       background-color: $flat-hover;
