@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/mikeatmercer/search_redesign#readme",
   "dependencies": {
-    "npm": "^6.13.4",
+    "npm": "^6.14.6",
     "tar": ">=2.2.2",
     "lodash": ">=4.17.13",
     "lodash.mergewith": ">=4.6.2",
